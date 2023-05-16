@@ -1,7 +1,27 @@
+SSL Checker
 
+ SSL Checker website that allows you to easily check the SSL/TLS certificate of a website or server. It retrieves the certificate information and provides a summary of its validity, expiration date, and other relevant details. with port checking 
+
+
+Features
+Check the SSL/TLS certificate of a website or server
+Retrieve certificate information such as issuer, subject, and validity period
+Display the expiration date and remaining validity period
+Support for both IPv4 and domain names
+Simple and easy-to-use command-line interfac like {/port}
+with port checking 
 
 to Run This Project loacally:
 
+
+Getting Started
+
+
+Prerequisites:
+nodejs 
+
+
+Run Locally :
 ```bash
 npm i 
 npx prisma migrate dev
