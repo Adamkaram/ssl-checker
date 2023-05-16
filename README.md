@@ -7,13 +7,15 @@ npm i
 npm run dev
 # or
 yarn i 
+npx prisma migrate dev 
 yarn dev
 # or
 pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
+Notice : i've used [Railway](https://railway.app/) for DB integration u could use postgress locally makes No different 
+port checker is working fine but in loacl server and subscribe membership of vercel cauz timeout if requests takes No more than 10 seconde then return 504 code 
 
 
 
