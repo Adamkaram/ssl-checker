@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import Footer from "./Footer";
 import NewsLetter from "./NewsLeeter";
 import QueryWrapper from "./QueryWrapper";
-import { useClient } from '<path_to_useClient>';
+import { useClient } from '<correct_module_path>';
 import ThemeToggle from './ThemeToggle';
 const inter = Inter({ subsets: ["latin"] });
 
