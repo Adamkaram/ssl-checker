@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "./Footer";
 import NewsLetter from "./NewsLeeter";
 import QueryWrapper from "./QueryWrapper";
-import { useClient } from '<correct_module_path>';
-import ThemeToggle from './ThemeToggle';
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,17 +18,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [theme, setTheme] = useClient('light');
 
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+
+ 
 
   return (
     <html lang="en">
       <body className={theme === 'light' ? inter.className : 'dark'}>
         <QueryWrapper>
-          <ThemeToggle onClick={toggleTheme} />
+ 
           {children}
           <NewsLetter />
           <Footer />
