@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "./Footer";
 import NewsLetter from "./NewsLeeter";
 import QueryWrapper from "./QueryWrapper";
+
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -16,17 +18,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [theme, setTheme] = useState('light');
 
-  const toggleTheme = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
-  };
+
+ 
 
   return (
     <html lang="en">
       <body className={theme === 'light' ? inter.className : 'dark'}>
         <QueryWrapper>
-          <button onClick={toggleTheme}>Toggle Theme</button>
+ 
           {children}
           <NewsLetter />
           <Footer />
