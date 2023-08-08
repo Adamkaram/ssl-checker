@@ -16,6 +16,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  use client;
   const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
