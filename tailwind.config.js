@@ -10,6 +10,15 @@ module.exports = {
       center : "true"
     },
     extend: {
+      colors: {
+        'pricing': '#ff8a05',
+      },
+      spacing: {
+        'pricing': '1rem',
+      },
+      typography: {
+        'pricing': { fontSize: '1.5rem' },
+      },
       backgroundImage: {
         'bgs': "url('../public/banner-bg.png')",
       },
