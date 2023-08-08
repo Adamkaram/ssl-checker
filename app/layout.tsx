@@ -4,6 +4,8 @@ import { Inter } from "next/font/google";
 import Footer from "./Footer";
 import NewsLetter from "./NewsLeeter";
 import QueryWrapper from "./QueryWrapper";
+import { useClient } from '<path_to_useClient>';
+import ThemeToggle from './ThemeToggle';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -26,7 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={theme === 'light' ? inter.className : 'dark'}>
         <QueryWrapper>
-          <button onClick={toggleTheme}>Toggle Theme</button>
+          <ThemeToggle onClick={toggleTheme} />
           {children}
           <NewsLetter />
           <Footer />
