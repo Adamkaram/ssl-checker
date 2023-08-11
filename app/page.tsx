@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import SearchInput from './searchInput';
-import Pricing from './Pricing';
+
 export default function Home() {
   return (
     <main
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </div>
       <SearchInput/>
-      <Pricing/>
+  
     </main>
   );
 }
